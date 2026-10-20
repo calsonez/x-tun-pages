@@ -21,7 +21,7 @@
     <p class="lead">Effective 20 October 2026.</p>
 
     <div class="card">
-        <p><strong>In short:</strong> X-Tun requires no sign-up and does not collect your name, phone number or email. To give you VPN access, the app sends our server a random device identifier and technical data. We do not keep VPN traffic logs: the sites you visit, DNS queries and traffic content are not stored.</p>
+        <p><strong>In short:</strong> X-Tun requires no sign-up and does not collect your name, phone number or email. To give you VPN access, the app sends our server a random device identifier and technical data, and sends usage statistics to AppMetrica (Yandex). We do not keep VPN traffic logs: the sites you visit, DNS queries and traffic content are not stored.</p>
     </div>
 
     <h2>1. Who processes the data</h2>
@@ -30,12 +30,13 @@
     <h2>2. Data we process</h2>
     <ul>
         <li><strong>Device identifier.</strong> On first launch the app creates a random identifier and stores it on the device. It is not linked to your name, phone, email or Apple's advertising identifier. Our server uses it to recognise the device and issue its VPN profile.</li>
-        <li><strong>Apple DeviceCheck token.</strong> Used so that the free trial is granted to a device only once. The token is verified with Apple and contains no personal data.</li>
-        <li><strong>Technical request data:</strong> app version, platform (iOS), and the IP address and client information (User-Agent) of requests to our server. Used to operate the service, prevent abuse and investigate failures.</li>
+        <li><strong>Apple DeviceCheck token.</strong> Confirms that the request comes from a genuine Apple device and protects free access from abuse. The token is verified with Apple and contains no personal data.</li>
+        <li><strong>Technical request data:</strong> app version, platform (iOS), the IP address and client information (User-Agent) of requests to our server, and app events (for example, tapping "Connect" and connection errors). Used to operate the service, prevent abuse and investigate failures.</li>
+        <li><strong>Usage statistics (AppMetrica).</strong> The app sends Yandex's AppMetrica service information about app launches and events (taps, the screen before connecting, errors), device model, iOS and app versions, AppMetrica and vendor identifiers (IDFV), and the IP address, from which AppMetrica derives an approximate region. Precise location and the advertising identifier (IDFA) are not sent. The statistics help us find and fix failures.</li>
         <li><strong>VPN profile data:</strong> the keys and address needed to establish the VPN connection, and the access expiry date. The profile is created on our server and delivered to the device.</li>
         <li><strong>Activation link.</strong> If you open an activation link we sent you, the one-time code from that link is sent to our server to bind the device to your profile.</li>
     </ul>
-    <p>We <strong>do not collect</strong> location, contacts, photos, browsing or app history, traffic content, or advertising-tracking data. The app does not use App Tracking Transparency tracking or the advertising identifier (IDFA).</p>
+    <p>We <strong>do not collect</strong> precise (GPS) location, contacts, photos, browsing or app history, traffic content, or advertising-tracking data. The app does not use App Tracking Transparency tracking or the advertising identifier (IDFA).</p>
 
     <h2>3. VPN traffic</h2>
     <p>Traffic between your device and the VPN server is encrypted. We do not log VPN traffic: we do not store the sites you visit, DNS queries or the content of transmitted data.</p>
@@ -47,6 +48,7 @@
     <ul>
         <li>providing VPN access, including the trial period;</li>
         <li>protecting free access from abuse;</li>
+        <li>analysing how the app works and fixing errors;</li>
         <li>keeping the service stable and providing support;</li>
         <li>complying with the law.</li>
     </ul>
@@ -54,16 +56,17 @@
     <h2>6. Sharing with third parties</h2>
     <p>We do not sell data. Data is shared only with:</p>
     <ul>
-        <li><strong>Apple</strong> — the DeviceCheck token, to verify the trial;</li>
+        <li><strong>Apple</strong> — the DeviceCheck token, to protect free access from abuse;</li>
+        <li><strong>Yandex (AppMetrica)</strong> — the usage statistics listed in section 2, processed under the <a href="https://yandex.com/legal/appmetrica_termsofuse/">AppMetrica terms</a>;</li>
         <li>authorities, where expressly required by law.</li>
     </ul>
-    <p>The app does not send data to analytics, advertising or tracking services.</p>
+    <p>The app does not track you across apps and does not share data with ad networks. There are no ads in the app yet: the screen before connecting collects no data.</p>
 
     <h2>7. Where data is processed</h2>
-    <p>The server that issues access and stores service data is located in Russia; VPN servers are located in various countries. When data is transferred outside the United Kingdom, we process only what is necessary to run the service and protect it with technical and organisational measures.</p>
+    <p>The server that issues access and stores service data is located in Russia; VPN servers are located in various countries; Yandex processes AppMetrica statistics on its own servers. When data is transferred outside the United Kingdom, we process only what is necessary to run the service and protect it with technical and organisational measures.</p>
 
     <h2>8. Retention</h2>
-    <p>Data is kept while you use the service and deleted after your access ends, within the periods needed to operate the service and meet legal requirements. Technical logs are kept for a limited time and deleted regularly.</p>
+    <p>Data is kept while you use the service and deleted after your access ends, within the periods needed to operate the service and meet legal requirements. Technical logs are kept for a limited time and deleted regularly. AppMetrica statistics are kept under the AppMetrica terms.</p>
 
     <h2>9. Your rights</h2>
     <p>You can request information about the data linked to your device, its correction or deletion, and withdraw your consent. Email <a href="mailto:support@x-tun.net">support@x-tun.net</a>. Deleting the app stops any new data from being sent.</p>
